@@ -1,3 +1,5 @@
+# NOTICE: This is a (poorly created) fork of [Hugo Bear Blog](https://github.com/janraasch/hugo-bearblog/) theme that I modified and somehow botched making it a fork
+
 # Hugo ʕ•ᴥ•ʔ Bear Blog ![Test](https://github.com/janraasch/hugo-bearblog/workflows/CI/badge.svg?branch=master&event=push)
 
 🧸 A [Hugo](https://gohugo.io/)-theme based on [Bear Blog](https://bearblog.dev).
