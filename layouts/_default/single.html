@@ -1,13 +1,16 @@
 {{ define "main" }}
 {{ if eq .Type "blog" }}{{ if not .Params.menu }}
+<center>
 <h1>{{ .Title }}</h1>
 <p>
   <i>
-    <time datetime='{{ .Date.Format "2006-01-02" }}' pubdate>
+    <time datetime='{{ .Date.Format "2006-01-02" }}' pubdate style="color: #50fa7b;">
       {{ .Date.Format (default "02 Jan, 2006" .Site.Params.dateFormat) }}
     </time>
   </i>
 </p>
+</center>
+<hr>
 {{ end }}{{ end }}
 <content>
   {{ .Content }}
