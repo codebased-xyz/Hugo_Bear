@@ -1,5 +1,28 @@
 # NOTICE: This is a (poorly created) fork of [Hugo Bear Blog](https://github.com/janraasch/hugo-bearblog/) theme that I modified and somehow botched making it a fork
 
+## Installation
+
+If you already have a Hugo site on your machine, you can simply add this theme via
+
+```
+git submodule add https://github.com/codebased-xyz/Hugo_Bear.git themes/<themename>
+```
+
+Then, add `theme = <themename>` to your config. Adjust the `config.toml` to customize the theme further.
+## Further customization
+A lot of the things you see can be customized using [params](https://gohugo.io/variables/site/#the-siteparams-variable) in the `config.toml` (or yaml,json) file. Below is a list of the params and what they do:
+### Footer params:
+- customFooter -> HTML code to be added to the footer (at its end).
+- sourceLink -> A link to the source of your site if using a license that requires it or you want to display it. Adds "Get the source code [here](sourceLink)" to the **footer** if present.
+- hideMadeWithLine -> If set to `true` hides the "Made posible by ..." line from the footer.
+### Header params:
+- title -> The title to show in `h1` in the header. !! This is in the global settings and not params !!
+- subTitle -> Smaller title to show in `h3` below the title. If present.
+## Other params:
+- seo -> Disables seo_tags.html partial if `false`.
+
+Everything below is left-over from original repo and will be revised to fit more.
+
 # Hugo ʕ•ᴥ•ʔ Bear Blog ![Test](https://github.com/janraasch/hugo-bearblog/workflows/CI/badge.svg?branch=master&event=push)
 
 🧸 A [Hugo](https://gohugo.io/)-theme based on [Bear Blog](https://bearblog.dev).
@@ -18,15 +41,6 @@ For a current & working demo of this theme, please check out https://janraasch.g
 
 When the user's browser is running »dark mode«, the dark color scheme will be used automatically. The default is the light/white color scheme. Check out the [`style.html`](https://github.com/janraasch/hugo-bearblog/blob/master/layouts/partials/style.html)-file for the implementation.
 
-## Installation
-
-If you already have a Hugo site on your machine, you can simply add this theme via
-
-```
-git submodule add https://github.com/janraasch/hugo-bearblog.git themes/hugo-bearblog
-```
-
-Then, adjust the `config.toml` as detailed below.
 
 For more information, read the official [setup guide][hugo-setup-guide] of Hugo.
 

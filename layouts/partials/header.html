@@ -1,6 +1,6 @@
 <a href="{{ "" | relURL }}" class="title">
-  <h2 style="height: 11px;">{{ .Site.Title }}</h2>
-  <h3 style="color: #65656b;font-size: medium;height: 15px;margin-top: 15px;">A random computer nerds's den</h3>
+  <h2>{{ .Site.Title }}</h2>
+  {{ with .Site.Params.subTitle }} <h3 style="color: #65656b;font-size: medium;height: 16px;margin-top: 0px;">{{ . }}</h3> {{ end }}
 </a>
 <nav>{{- partial "nav.html" . -}}</nav>
 <hr>

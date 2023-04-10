@@ -1,1 +1,4 @@
-{{ if ne .Site.Params.hideMadeWithLine true }}<hr>Made  possible by <a href="https://github.com/janraasch/hugo-bearblog/">Hugo Bear</a> and <a href="https://gohugo.io/">Hugo</a><br>Get the source code <a href="https://github.com/codebased-xyz/codebased.xyz_Hugo">Here</a> (AGPL3){{ end }}
+<hr>
+{{ with .Site.Params.sourceLink }}<br>Get the source code <a href="{{ . }}">here</a>{{ end }}
+{{ if ne .Site.Params.hideMadeWithLine true }}<br>Made  possible by <a href="https://github.com/janraasch/hugo-bearblog/">Hugo Bear</a> and <a href="https://gohugo.io/">Hugo</a>{{ end }}
+{{ with .Site.Params.customFooter }}<br> {{ . }} {{ end }}
