@@ -1,4 +1,4 @@
-{{ if ne .Site.Params.seo false }}
+{{ with .Site.Params.seo}} <!--TODO: Fix the seo param not working -->
 {{ else }}
 <!-- Primary Meta Tags -->
 <meta name="title" content="{{ with .Title }}{{ . }}{{ else }}{{ .Site.Title }}{{ end }}" />
